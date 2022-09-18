@@ -1,0 +1,12 @@
+- name: Test Navigator
+  hosts: testboxes
+
+  tasks:
+  
+  - name: test var
+    ansible.builtin.debug:
+      msg: "{{ myvar }}"
+
+  - name: test env
+    ansible.builtin.debug:
+      msg: "{{ testvar }}"
