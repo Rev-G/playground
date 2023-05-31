@@ -1,0 +1,204 @@
+{
+    "plays": [
+        {
+            "___progress": "100%",
+            "__changed": 0,
+            "__failed": 0,
+            "__ignored": 0,
+            "__in progress": 0,
+            "__ok": 0,
+            "__percent_complete": 100,
+            "__play_name": "Test Navigator",
+            "__progress": "Complete",
+            "__skipped": 0,
+            "__task_count": 1,
+            "__unreachable": 1,
+            "name": "Test Navigator",
+            "pattern": "testboxes",
+            "play": "Test Navigator",
+            "play_pattern": "testboxes",
+            "play_uuid": "0242ac11-0002-59ce-d31f-000000000007",
+            "playbook": "/Users/gary/mycode/Rev-G/playground/ansible/test.yml",
+            "playbook_uuid": "757ff8cf-3209-4379-9e58-da71adae0195",
+            "tasks": [
+                {
+                    "__changed": false,
+                    "__duration": "5s",
+                    "__host": "kube2",
+                    "__number": 0,
+                    "__result": "Unreachable",
+                    "__task": "Gathering Facts",
+                    "__task_action": "gather_facts",
+                    "duration": 4.7159,
+                    "end": "2022-12-05T02:25:22.628076",
+                    "host": "kube2",
+                    "play": "Test Navigator",
+                    "play_pattern": "testboxes",
+                    "play_uuid": "0242ac11-0002-59ce-d31f-000000000007",
+                    "playbook": "/Users/gary/mycode/Rev-G/playground/ansible/test.yml",
+                    "playbook_uuid": "757ff8cf-3209-4379-9e58-da71adae0195",
+                    "remote_addr": "kube2",
+                    "res": {
+                        "changed": false,
+                        "msg": "Invalid/incorrect password: Warning: Permanently added the ECDSA host key for IP address '192.168.1.98' to the list of known hosts.\r\nPermission denied, please try again.",
+                        "unreachable": true
+                    },
+                    "resolved_action": "ansible.builtin.gather_facts",
+                    "start": "2022-12-05T02:25:17.912176",
+                    "task": "Gathering Facts",
+                    "task_action": "gather_facts",
+                    "task_args": "",
+                    "task_path": "/Users/gary/mycode/Rev-G/playground/ansible/test.yml:1",
+                    "task_uuid": "0242ac11-0002-59ce-d31f-00000000000e",
+                    "uuid": "05d0a0ea-6aae-4b24-9fdb-4739dc753006"
+                }
+            ],
+            "uuid": "0242ac11-0002-59ce-d31f-000000000007"
+        }
+    ],
+    "settings_entries": {
+        "ansible-navigator": {
+            "ansible": {
+                "cmdline": "--limit kube2 --extra-vars '{\"myvar\":\"hello navigator\"}'",
+                "config": {
+                    "help": false
+                },
+                "doc": {
+                    "help": false,
+                    "plugin": {
+                        "type": "module"
+                    }
+                },
+                "inventory": {
+                    "entries": [
+                        "/Users/gary/mycode/Rev-G/playground/ansible/hosts"
+                    ],
+                    "help": false
+                },
+                "playbook": {
+                    "help": false,
+                    "path": "/Users/gary/mycode/Rev-G/playground/ansible/test.yml"
+                }
+            },
+            "ansible-builder": {
+                "help": false,
+                "workdir": "/Users/gary/mycode/Rev-G/playground/ansible"
+            },
+            "app": "run",
+            "collection-doc-cache-path": "/Users/gary/.cache/ansible-navigator/collection_doc_cache.db",
+            "color": {
+                "enable": true,
+                "osc4": true
+            },
+            "editor": {
+                "command": "vi +{line_number} {filename}",
+                "console": true
+            },
+            "exec": {
+                "command": "/bin/bash",
+                "shell": true
+            },
+            "execution-environment": {
+                "container-engine": "docker",
+                "enabled": true,
+                "environment-variables": {
+                    "pass": [
+                        "MYPASS",
+                        "MYENV"
+                    ]
+                },
+                "image": "quay.io/ansible/creator-ee:v0.9.1",
+                "pull": {
+                    "policy": "tag"
+                }
+            },
+            "images": {
+                "details": [
+                    "everything"
+                ]
+            },
+            "logging": {
+                "append": true,
+                "file": "/Users/gary/mycode/Rev-G/playground/ansible/ansible-navigator.log",
+                "level": "warning"
+            },
+            "mode": "interactive",
+            "playbook-artifact": {
+                "enable": true,
+                "save-as": "{playbook_dir}/{playbook_name}-artifact-{time_stamp}.json"
+            },
+            "settings": {
+                "effective": false,
+                "sample": false,
+                "schema": "json",
+                "sources": false
+            },
+            "time-zone": "UTC"
+        }
+    },
+    "settings_sources": {
+        "ansible-navigator.ansible-builder.help": "Defaults",
+        "ansible-navigator.ansible-builder.workdir": "Defaults",
+        "ansible-navigator.ansible-lint.config": "Not set",
+        "ansible-navigator.ansible-lint.lintables": "Not set",
+        "ansible-navigator.ansible-runner.artifact-dir": "Not set",
+        "ansible-navigator.ansible-runner.rotate-artifacts-count": "Not set",
+        "ansible-navigator.ansible-runner.timeout": "Not set",
+        "ansible-navigator.ansible.cmdline": "Previous cli command",
+        "ansible-navigator.ansible.config.help": "Defaults",
+        "ansible-navigator.ansible.config.path": "Not set",
+        "ansible-navigator.ansible.doc.help": "Defaults",
+        "ansible-navigator.ansible.doc.plugin.name": "Not set",
+        "ansible-navigator.ansible.doc.plugin.type": "Defaults",
+        "ansible-navigator.ansible.inventory.entries": "Previous cli command",
+        "ansible-navigator.ansible.inventory.help": "Defaults",
+        "ansible-navigator.ansible.playbook.help": "Defaults",
+        "ansible-navigator.ansible.playbook.path": "Previous cli command",
+        "ansible-navigator.app": "Command line",
+        "ansible-navigator.collection-doc-cache-path": "Defaults",
+        "ansible-navigator.color.enable": "Defaults",
+        "ansible-navigator.color.osc4": "Defaults",
+        "ansible-navigator.editor.command": "Defaults",
+        "ansible-navigator.editor.console": "Defaults",
+        "ansible-navigator.exec.command": "Defaults",
+        "ansible-navigator.exec.shell": "Defaults",
+        "ansible-navigator.execution-environment.container-engine": "Automatically determined",
+        "ansible-navigator.execution-environment.container-options": "Not set",
+        "ansible-navigator.execution-environment.enabled": "Defaults",
+        "ansible-navigator.execution-environment.environment-variables.pass": "Previous cli command",
+        "ansible-navigator.execution-environment.environment-variables.set": "Not set",
+        "ansible-navigator.execution-environment.image": "Defaults",
+        "ansible-navigator.execution-environment.pull.arguments": "Not set",
+        "ansible-navigator.execution-environment.pull.policy": "Defaults",
+        "ansible-navigator.execution-environment.volume-mounts": "Not set",
+        "ansible-navigator.images.details": "Defaults",
+        "ansible-navigator.inventory-columns": "Not set",
+        "ansible-navigator.logging.append": "Defaults",
+        "ansible-navigator.logging.file": "Defaults",
+        "ansible-navigator.logging.level": "Defaults",
+        "ansible-navigator.mode": "Defaults",
+        "ansible-navigator.playbook-artifact.enable": "Defaults",
+        "ansible-navigator.playbook-artifact.replay": "Not set",
+        "ansible-navigator.playbook-artifact.save-as": "Defaults",
+        "ansible-navigator.settings.effective": "Defaults",
+        "ansible-navigator.settings.sample": "Defaults",
+        "ansible-navigator.settings.schema": "Defaults",
+        "ansible-navigator.settings.sources": "Defaults",
+        "ansible-navigator.time-zone": "Defaults",
+        "settings_file_path": "None",
+        "settings_file_source": "None"
+    },
+    "status": "failed",
+    "status_color": 9,
+    "stdout": [
+        "",
+        "PLAY [Test Navigator] **********************************************************",
+        "",
+        "TASK [Gathering Facts] *********************************************************",
+        "\u001b[1;31mfatal: [kube2]: UNREACHABLE! => {\"changed\": false, \"msg\": \"Invalid/incorrect password: Warning: Permanently added the ECDSA host key for IP address '192.168.1.98' to the list of known hosts.\\r\\nPermission denied, please try again.\", \"unreachable\": true}\u001b[0m",
+        "",
+        "PLAY RECAP *********************************************************************",
+        "\u001b[0;31mkube2\u001b[0m                      : ok=0    changed=0    \u001b[1;31munreachable=1   \u001b[0m failed=0    skipped=0    rescued=0    ignored=0   "
+    ],
+    "version": "2.0.0"
+}

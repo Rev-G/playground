@@ -2,4 +2,3 @@ testboxes:
   hosts:
     kube2:
     kube3:
-    

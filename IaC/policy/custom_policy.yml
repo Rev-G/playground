@@ -1,0 +1,12 @@
+metadata:
+  id: "CKV2_PALMER_1"
+  name: "We hate Hello World"
+  category: "GENERAL_SECURITY"
+  guideline: "https://docs.bridgecrew.io/docs/CKV2_PALMER_1"
+definition:
+     cond_type: "attribute"
+     resource_types: 
+     - "random_string"
+     attribute: "length"
+     operator: "greater_than_or_equal"
+     value: "16"
