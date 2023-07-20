@@ -14,4 +14,6 @@ https://www.checkov.io/7.Scan%20Examples/Terraform%20Plan%20Scanning.html
 
 `checkov -f tfplan.json --external-checks-dir ./policy -c CKV2_PALMER_1`
 
+checkov -f tfplan.json --framework json --external-checks-dir ./jsontest_policy -c CKV2_PALMER_1
+
 `checkov -f tfplan.json --external-checks-dir ./policy`

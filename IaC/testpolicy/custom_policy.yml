@@ -1,0 +1,11 @@
+metadata:
+  id: "CKV2_PALMER_1"
+  name: "Does Not work with JSON"
+  category: "GENERAL_SECURITY"
+  guideline: "https://docs.bridgecrew.io/docs/CKV2_PALMER_1"
+definition:
+     cond_type: attribute
+     resource_types: all
+     attribute: lakeland
+     operator: jsonpath_equals
+     value: "devs"
