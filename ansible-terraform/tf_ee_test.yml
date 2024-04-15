@@ -1,0 +1,22 @@
+- name: Test Terraform EE
+  hosts: localhost
+
+  tasks:
+
+  - name: debug
+    ansible.builtin.debug:
+      msg: "TF from EE Test"
+  
+  - name: test Terraform
+    cloud.terraform.terraform:
+      project_path: '/Users/gary/mycode/ansible-tf-test/'
+      state: present
+
+  - name: List outputs from terraform.tfstate in project_dir
+    cloud.terraform.terraform_output:
+      project_path: '/Users/gary/mycode/ansible-tf-test/'
+    register: tfout
+
+  - name: dump outputs
+    ansible.builtin.debug:
+      msg: "{{ tfout.outputs.hello_world.value }}"
