@@ -1,2 +1,0 @@
-2022-12-05T02:25:14.071180+00:00 WARNING 'ansible_navigator.runner.base._add_env_vars_to_args' Pass through environment variable `MYPASS` not currently set, discarded
-2022-12-05T02:25:14.072152+00:00 WARNING 'ansible_navigator.runner.base._add_env_vars_to_args' Pass through environment variable `MYENV` not currently set, discarded
