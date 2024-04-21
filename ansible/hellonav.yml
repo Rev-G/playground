@@ -1,0 +1,12 @@
+- name: Hello Navigator
+  hosts: localhost
+
+  tasks:
+  
+  - name: hello
+    ansible.builtin.debug:
+      msg: "Ohh hi!"
+  
+  - name: Dump env var
+    ansible.builtin.debug:
+      msg: "{{ lookup('env', 'MYENV') }}"

@@ -18,3 +18,5 @@ set env vars
 run ansible-navigator
 
 `ansible-navigator run test.yml -i hosts --limit kube2 --extra-vars '{"myvar":"hello navigator"}' --penv MYPASS MYENV`
+
+`ansible-navigator run hellonav.yml -i "localhost" --execution-environment-image registry.redhat.io/ansible-automation-platform-24/ee-minimal-rhel9:1.0.0-587 --penv MYENV --container-engine docker --pull-policy missing -m stdout`

@@ -3,6 +3,8 @@
 tfplan.*
 .terraform.lock*
 deploy.json
+*.log
+*-artifact-*.json
 
 ### VisualStudioCode ###
 .vscode/*
