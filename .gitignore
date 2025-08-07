@@ -8,3 +8,6 @@ deploy.json
 
 ### VisualStudioCode ###
 .vscode/*
+
+### Python ###
+.venv/
